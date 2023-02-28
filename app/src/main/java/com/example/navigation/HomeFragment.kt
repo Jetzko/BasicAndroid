@@ -9,6 +9,7 @@ import android.widget.Button
 import androidx.navigation.fragment.findNavController
 
 
+
 class HomeFragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -18,16 +19,9 @@ class HomeFragment : Fragment() {
         val view = inflater.inflate(R.layout.fragment_home, container, false)
         val buttonData = view.findViewById<Button>(R.id.toData_homeButton)
         buttonData.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_dataFragment)
+            findNavController().navigate(R.id.action_homeFragment_to_fruitFragment)
         }
-            val buttonEditor = view.findViewById<Button>(R.id.toEditor_homeButton)
-            buttonEditor.setOnClickListener {
-                findNavController().navigate(R.id.action_homeFragment_to_editorFragment)
-        }
+
         return view
-
-
         }
-
-
     }

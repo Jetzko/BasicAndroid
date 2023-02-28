@@ -1,6 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <dimen name="textSize">34sp</dimen>
-    <dimen name="button_insetTopBot">6dp</dimen>
-    <dimen name="button_padding">8dp</dimen>
-</resources>

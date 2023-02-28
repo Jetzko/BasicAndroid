@@ -6,25 +6,37 @@
     android:layout_height="match_parent"
     tools:context=".EditorFragment">
 
-    <TextView
-        android:id="@+id/textView2"
+    <EditText
+        android:id="@+id/editable"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/editor_fragment"
+        android:hint="Pick your favourite fruit!"
+        android:inputType="text"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/editor_toHomeButton"/>
-
+        />
+    <Button
+        android:id="@+id/showButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editable"
+        app:layout_constraintTop_toBottomOf="@id/editable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:text="Pick" />
     <Button
         android:id="@+id/editor_toHomeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/editor_to_home"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="To fruits"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/editable"
+        />
 
 
 

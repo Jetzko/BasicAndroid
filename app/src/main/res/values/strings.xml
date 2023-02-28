@@ -12,4 +12,10 @@
     <string name="editor_fragment">Editor Fragment</string>
     <string name="editor_to_home">To Home</string>
     <string name="data_to_home_">To Home</string>
+    <string name="fruit">%d</string>
+    <string name="apple">Apple</string>
+    <string name="pear">Pear</string>
+    <string name="banana">Banana</string>
+    <string name="melon">Melon</string>
+    <string name="grape">Grape</string>
 </resources>

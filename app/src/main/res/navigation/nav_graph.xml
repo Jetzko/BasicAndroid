@@ -11,20 +11,9 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_dataFragment"
-            app:destination="@id/dataFragment" />
-        <action
-            android:id="@+id/action_homeFragment_to_editorFragment"
-            app:destination="@id/editorFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/dataFragment"
-        android:name="com.example.navigation.DataFragment"
-        android:label="fragment_data"
-        tools:layout="@layout/fragment_data" >
-        <action
-            android:id="@+id/action_dataFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_homeFragment_to_fruitFragment"
+            app:destination="@id/fruitFragment" />
+
     </fragment>
     <fragment
         android:id="@+id/editorFragment"
@@ -32,7 +21,26 @@
         android:label="fragment_editor"
         tools:layout="@layout/fragment_editor" >
         <action
-            android:id="@+id/action_editorFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
+            android:id="@+id/action_editorFragment_to_fruitFragment"
+            app:destination="@id/fruitFragment" />
+        <action
+            android:id="@+id/action_editorFragment_to_goal"
+            app:destination="@id/goal" />
     </fragment>
+    <fragment
+        android:id="@+id/fruitFragment"
+        android:name="com.example.navigation.Fruits.FruitFragment"
+        android:label="fragment_fruit"
+        tools:layout="@layout/fragment_fruit" >
+        <action
+            android:id="@+id/action_fruitFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_fruitFragment_to_editorFragment"
+            app:destination="@id/editorFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/goal"
+        android:name="com.example.navigation.Fruits.Goal"
+        android:label="Goal" />
 </navigation>
